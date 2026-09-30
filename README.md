@@ -1,6 +1,6 @@
 # ByteSpace
 
-A responsive React implementation of the ByteSpace learning platform design. The required landing page includes the hero, featured courses, learning paths, creator sections, testimonials, and footer. Login and signup screens are included as bonus design pages.
+A responsive React implementation of the ByteSpace learning platform design. It includes the complete landing page and the additional catalogue, course details, creator profile, login, signup, and 404 screens shown in the supplied references.
 
 ## Run locally
 
@@ -14,9 +14,13 @@ Open the local URL printed by Vite. To verify a production build, run `npm run b
 ## Routes
 
 - `/` — landing page
+- `/courses` — searchable course catalogue with categories and pagination
+- `/courses/build-digital-asset` — course details with About, Lessons, and Reviews tabs
+- `/creators/purepearl-studio` — creator profile
 - `/login` — sign in design
 - `/signup` — account creation design
+- Any other route — 404 page
 
-Course category selection and search work against the six sample courses shown in the design. The newsletter form gives local confirmation. Authentication screens are visual demos and are not connected to a backend.
+Course category selection, search, pagination, course tabs, review filters, creator follow, and newsletter confirmation are local interactions. Authentication, enrollment, and video playback are visual demos and are not connected to a backend.
 
 The supplied design screenshots are kept locally in `input/` and excluded from Git. Website graphics are in `public/images/`.
