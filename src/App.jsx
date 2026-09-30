@@ -69,7 +69,13 @@ function Logo({ dark = false }) {
       href="/#home"
       aria-label="ByteSpace home"
     >
-      <span className="logo-mark">b</span>
+      <svg className="logo-mark" viewBox="0 0 28 32" aria-hidden="true">
+        <path
+          d="M2 1v27.5c0 1.1.9 2 2 2h8.5C20.5 30.5 27 24 27 16S20.5 1.5 12.5 1.5H9v8h3.5a6.5 6.5 0 1 1-6.5 6.5V1H2Z"
+          fill="currentColor"
+        />
+        <path d="m7 15 11 6.5-11 6.5V15Z" fill="#063bdc" />
+      </svg>
       <span>ByteSpace</span>
     </a>
   );
@@ -104,6 +110,40 @@ function Hero({ onSearch }) {
     <>
       <section className="hero-section blue-grid" id="home">
         <Header />
+        <img
+          className="hero-decor hero-decor-squiggle"
+          src="/images/hero-left-squiggle.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <img
+          className="hero-decor hero-decor-fold"
+          src="/images/hero-right-fold.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <svg
+          className="hero-decor hero-decor-triangle"
+          viewBox="0 0 120 125"
+          aria-hidden="true"
+        >
+          <defs>
+            <linearGradient id="triangle-gradient" x1="0" y1="0" x2="1" y2="1">
+              <stop stopColor="#ffffff" />
+              <stop offset="0.72" stopColor="#f7f8ff" />
+              <stop offset="1" stopColor="#dbe0ec" />
+            </linearGradient>
+          </defs>
+          <path
+            d="M2 86 86 5c3-3 7-2 8 3l24 106c1 5-3 8-8 7L5 96c-5-1-7-6-3-10Z"
+            fill="url(#triangle-gradient)"
+          />
+          <path
+            d="M86 5 69 108l49 6L94 8c-1-5-5-6-8-3Z"
+            fill="#e9ebf3"
+            opacity=".45"
+          />
+        </svg>
         <div className="hero-copy container">
           <h1>
             Get Access to Hundreds
@@ -132,7 +172,7 @@ function Hero({ onSearch }) {
         </div>
         <div className="hero-art-wrap">
           <img
-            src="/images/hero-clean.png"
+            src="/images/hero-clean-v2.png"
             alt="Student learning online with a laptop and progress cards"
           />
         </div>
@@ -302,7 +342,7 @@ function Growth() {
         </div>
         <div className="growth-visual">
           <img
-            src="/images/hero-clean.png"
+            src="/images/hero-clean-v2.png"
             alt="Student exploring courses"
             loading="lazy"
           />
@@ -491,7 +531,7 @@ function AuthPage({ signup }) {
               : "Experience a seamless and efficient sign-in process that grants you instant access to a world of knowledge."}
           </p>
           <img
-            src="/images/hero-clean.png"
+            src="/images/hero-clean-v2.png"
             alt="ByteSpace learning experience"
           />
         </div>

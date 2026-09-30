@@ -53,13 +53,10 @@
   white-space: nowrap;
 }
 .logo-mark {
-  font-size: 31px;
-  line-height: 1;
+  width: 27px;
+  height: 31px;
   color: var(--lime);
-  font-weight: 800;
-  font-style: italic;
-  letter-spacing: -7px;
-  margin-right: 7px;
+  flex: none;
 }
 .logo-dark {
   color: #252525;
@@ -75,10 +72,35 @@
   text-decoration: underline;
 }
 .hero-section {
-  height: 766px;
+  height: 779px;
   color: #fff;
   overflow: hidden;
   position: relative;
+}
+.hero-decor {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+.hero-decor-squiggle {
+  width: 155px;
+  height: 230px;
+  left: 0;
+  top: 197px;
+  mask-image: linear-gradient(90deg, #000 88%, transparent);
+}
+.hero-decor-fold {
+  width: 126px;
+  height: 232px;
+  right: 0;
+  top: 188px;
+  mask-image: linear-gradient(90deg, transparent, #000 10%);
+}
+.hero-decor-triangle {
+  width: 112px;
+  right: 155px;
+  top: 365px;
+  filter: drop-shadow(5px 8px 5px #0432a733);
 }
 .hero-copy {
   text-align: center;
@@ -133,7 +155,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: min(100%, 1079px);
-  height: 382px;
+  height: 360px;
   overflow: hidden;
 }
 .hero-art-wrap img {
@@ -143,8 +165,8 @@
   mask-image: linear-gradient(
     90deg,
     transparent 0%,
-    #000 7%,
-    #000 93%,
+    #000 2%,
+    #000 98%,
     transparent 100%
   );
 }
@@ -793,6 +815,23 @@
   }
   .hero-section {
     height: 650px;
+  }
+  .hero-decor-squiggle {
+    width: 85px;
+    height: 126px;
+    left: 0;
+    top: 295px;
+  }
+  .hero-decor-fold {
+    width: 75px;
+    height: 138px;
+    right: 0;
+    top: 275px;
+  }
+  .hero-decor-triangle {
+    width: 60px;
+    right: 24px;
+    top: 365px;
   }
   .hero-copy {
     padding-top: 68px;
